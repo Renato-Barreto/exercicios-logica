@@ -1,0 +1,39 @@
+Algoritmo "semnome"
+
+Var
+   dia: inteiro
+
+Inicio
+
+   escreva("Digite o dia da semana:")
+   leia(dia)
+   limpatela
+
+   escolha dia
+   caso (1)
+      escreval ("O dia é domingo")
+      escreval ("Fim de Semana")
+   caso (2)
+      escreval ("O dia é segunda-feira")
+      escreval ("Dia Útil")
+   caso (3)
+      escreval ("O dia é terça-feira")
+      escreval ("Dia Útil")
+   caso (4)
+      escreval ("O dia é quarta-feira")
+      escreval ("Dia Útil")
+   caso (5)
+      escreval ("O dia é quinta-feira")
+      escreval ("Dia Útil")
+   caso (6)
+      escreval ("O dia é sexta-feira")
+      escreval ("Dia Útil")
+   caso (7)
+      escreval ("O dia é Sábado")
+      escreval ("Fim de Semana")
+   outrocaso
+      escreval("Inválido")
+   fimescolha
+
+
+Fimalgoritmo
