@@ -1,0 +1,60 @@
+Algoritmo "semnome"
+
+Var
+   pedido,codigo: inteiro
+   preco: real
+   prato: caracter
+
+Inicio
+   escreval("---------------MENU---------------")
+   escreval("1 - Picanha")
+   escreval("2 - Lasanha")
+   escreval("3 - Strogonoff")
+   escreval("4 - Bife Acebolado")
+   escreval("5 - Pão com ovo")
+   escreval("---------------****---------------")
+   escreva("Digite o NÚMERO do pedido que você deseja:")
+   leia(pedido)
+   limpatela
+
+   escolha pedido
+   caso (1)
+      prato <- "Picanha"
+      preco <- 25.00
+      codigo <- 1
+   caso (2)
+      prato <- "Lasanha"
+      preco <- 20.00
+      codigo <- 2
+   caso (3)
+      prato <- "Strogonoff"
+      preco <- 18.00
+      codigo <- 3
+   caso (4)
+      prato <- "Bife Acebolado"
+      preco <- 15.00
+      codigo <- 4
+   outrocaso
+      prato <- "Pão com ovo"
+      preco <- 5.00
+      codigo <- 5
+   fimescolha
+
+   escreval("1 - Picanha")
+   escreval("2 - Lasanha")
+   escreval("3 - Strogonoff")
+   escreval("4 - Bife Acebolado")
+   escreval("5 - Pão com ovo")
+   escreval("---------------------")
+   escreval("Opção:",pedido)
+   escreval("---------------------")
+   escreval("Código:",codigo)
+   escreval("Prato:",prato)
+   escreval("Preço:",preco :2:2)
+
+
+
+
+
+
+Fimalgoritmo
