@@ -31,13 +31,16 @@ Inicio
       leia(parcelas)
       limpatela
 
-      valorPorParcela <- (valor / parcelas)
-
-      escreval("Valor do Produto:",valor :2:2)
-      escreval("Forma de Pagamento: PARCELADO")
-      escreval("Quantidade de parcelas:",parcelas)
-      escreval("Valor das parcelas:",valorPorParcela :2:2)
-      escreval("Total a Pagar:",valorFinal :2:2)
+      se (parcelas > 6) entao
+         escreval("Número de parcelas excedido")
+      senao
+         valorPorParcela <- (valor / parcelas)
+         escreval("Valor do Produto:",valor :2:2)
+         escreval("Forma de Pagamento: PARCELADO")
+         escreval("Quantidade de parcelas:",parcelas)
+         escreval("Valor das parcelas:",valorPorParcela :2:2)
+         escreval("Total a Pagar:",valorFinal :2:2)
+      fimse
 
    outrocaso
       escreval("forma de  pagamento não reconhecida")
