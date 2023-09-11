@@ -6,16 +6,16 @@ Var
    valorPorParcela,valorFinal,valor,desconto: real
 
 Inicio
-   escreval("digite valor do produto você desja comprar")
+   escreval("digite valor do produto vocÃª desja comprar")
    leia(valor)
    limpatela
 
-   escreval("digite a forma de pagamento V (á vista) / P (parcelado):")
+   escreval("digite a forma de pagamento V (Ã¡ vista) / P (parcelado):")
    leia(formaDePagamento)
    limpatela
 
-   //Utilizei V ou P pois não consegui com "á vista" e "parcelado"
-   //Tirar dúvidas com o  professor segunda-feira 11/09/23
+   //Utilizei V ou P pois nÃ£o consegui com "Ã¡ vista" e "parcelado"
+   //Tirar dÃºvidas com o  professor segunda-feira 11/09/23
 
    escolha formaDePagamento
    caso "V"
@@ -23,11 +23,11 @@ Inicio
       valorFinal <- (valor - desconto)
    caso "P"
       valorFinal <- valor
-      escreval("Digite a quantidade de parcelas")
+      escreval("Digite a quantidade de parcelas(limite mÃ¡ximo 6X)")
       leia(parcelas)
       limpatela
    outrocaso
-      escreval("forma de  pagamento não reconhecida")
+      escreval("forma de  pagamento nÃ£o reconhecida")
    fimescolha
 
    //Escolha-Caso para parcelas
@@ -46,7 +46,7 @@ Inicio
    caso (6)
       valorPorParcela <- valor / 6
    outrocaso
-      escreval("Limite de parcelas para compra é em até 6 vezes")
+      escreval("O limite de parcelas Ã© em atÃ© 6 vezes, dÃ©bitado Ã¡ vista")
    fimescolha
 
    //Escolha-Caso para mensagem final
@@ -54,7 +54,7 @@ Inicio
    escolha formaDePagamento
    caso "V"
       escreval("Valor do Produto:",valor :2:2)
-      escreval("Forma de Pagamento: Á VISTA")
+      escreval("Forma de Pagamento: Ã VISTA")
       escreval("Valor do Desconto:",desconto)
       escreval("Total a Pagar:",valorFinal :2:2)
    caso "P"
@@ -63,7 +63,7 @@ Inicio
       escreval("Quantidade de parcelas:",valorPorParcela :2:2)
       escreval("Total a Pagar:",valorFinal :2:2)
    outrocaso
-      escreval("forma de  pagamento não reconhecida")
+      escreval("forma de  pagamento nÃ£o reconhecida")
    fimescolha
 
 
