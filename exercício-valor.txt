@@ -50,21 +50,27 @@ Inicio
    fimescolha
 
    //Escolha-Caso para mensagem final
+   
+      escolha formaDePagamento
+      caso "V"
+         escreval("Valor do Produto:",valor :2:2)
+         escreval("Forma de Pagamento: Á VISTA")
+         escreval("Valor do Desconto:",desconto)
+         escreval("Total a Pagar:",valorFinal :2:2)
+      caso "P"
+         escreval("Valor do Produto:",valor :2:2)
+         escreval("Forma de Pagamento: PARCELADO")
+         escreval("Quantidade de parcelas:",parcelas)
+         escreval("Valor das parcelas:",valorPorParcela :2:2)
+         escreval("Total a Pagar:",valorFinal :2:2)
+      outrocaso
+         escreval("forma de pagamento não reconhecida")
+      fimescolha
 
-   escolha formaDePagamento
-   caso "V"
-      escreval("Valor do Produto:",valor :2:2)
-      escreval("Forma de Pagamento: Á VISTA")
-      escreval("Valor do Desconto:",desconto)
-      escreval("Total a Pagar:",valorFinal :2:2)
-   caso "P"
-      escreval("Valor do Produto:",valor :2:2)
-      escreval("Forma de Pagamento: PARCELADO")
-      escreval("Quantidade de parcelas:",valorPorParcela :2:2)
-      escreval("Total a Pagar:",valorFinal :2:2)
-   outrocaso
-      escreval("forma de  pagamento não reconhecida")
-   fimescolha
+
+
+
+Fimalgoritmo
 
 
 
