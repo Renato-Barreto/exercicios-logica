@@ -1,0 +1,23 @@
+Algoritmo "semnome"
+
+Var
+
+   tabuada: inteiro
+
+Inicio
+
+   para tabuada de 1 ate 10 passo 1 faca
+      escreval("3 * ",tabuada, " = ", 3 * tabuada)
+   fimpara
+   escreval(" ")
+
+   para tabuada de 1 ate 10 passo 1 faca
+      escreval("5 * ",tabuada, " = ", 5 * tabuada)
+   fimpara
+   escreval(" ")
+
+   para tabuada de 1 ate 10 passo 1 faca
+      escreval("7 * ",tabuada, " = ", 7 * tabuada)
+   fimpara
+   escreval(" ")
+Fimalgoritmo
