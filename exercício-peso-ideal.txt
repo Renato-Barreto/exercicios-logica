@@ -1,0 +1,34 @@
+Algoritmo "semnome"
+
+Var
+   sexo: caracter
+   peso,altura,pesoIdeal: real
+
+Inicio
+   escreval("digite seu sexo (M - Masculino / F - Fêminino)")
+   leia(sexo)
+   limpatela
+
+   escreval("digite seu peso em Kg")
+   leia(peso)
+   limpatela
+   
+   escreval("digite sua altura em Metros")
+   leia(altura)
+   limpatela
+
+
+   escolha sexo
+   caso "M"
+      pesoIdeal <- (peso * altura)*0.50
+      escreval("Seu peso ideal é:",pesoIdeal :2:2)
+
+   caso "F"
+      pesoIdeal <- (peso * altura)*0.40
+      escreval("Seu peso ideal é:",pesoIdeal :2:2)
+
+   outrocaso
+      escreval("sexo não reconhecido")
+   fimescolha
+
+Fimalgoritmo
