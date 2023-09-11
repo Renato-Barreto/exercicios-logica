@@ -1,0 +1,11 @@
+Algoritmo "semnome"
+
+Var
+   numero: inteiro
+Inicio
+
+   para numero de 2 ate 20 passo 2 faca
+      escreval("numeros pares: ",numero)
+   fimpara
+
+Fimalgoritmo
