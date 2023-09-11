@@ -14,60 +14,33 @@ Inicio
    leia(formaDePagamento)
    limpatela
 
-   //Utilizei V ou P pois não consegui com "á vista" e "parcelado"
-   //Tirar dúvidas com o  professor segunda-feira 11/09/23
 
    escolha formaDePagamento
    caso "V"
       desconto  <- valor * 0.10
       valorFinal <- (valor - desconto)
+
+      escreval("Valor do Produto:",valor :2:2)
+      escreval("Forma de Pagamento: Á VISTA")
+      escreval("Valor do Desconto:",desconto)
+      escreval("Total a Pagar:",valorFinal :2:2)
    caso "P"
       valorFinal <- valor
-      escreval("Digite a quantidade de parcelas(limite máximo 6X)")
+
+      escreval("Digite a quantidade de parcelas (limite máximo 6X)")
       leia(parcelas)
       limpatela
+
+      valorPorParcela <- (valor / parcelas)
+
+      escreval("Valor do Produto:",valor :2:2)
+      escreval("Forma de Pagamento: PARCELADO")
+      escreval("Quantidade de parcelas:",parcelas)
+      escreval("Valor das parcelas:",valorPorParcela :2:2)
+      escreval("Total a Pagar:",valorFinal :2:2)
+
    outrocaso
       escreval("forma de  pagamento não reconhecida")
    fimescolha
-
-   //Escolha-Caso para parcelas
-
-   escolha parcelas
-   caso (1)
-      valorPorParcela <- valor / 1
-   caso (2)
-      valorPorParcela <- valor / 2
-   caso (3)
-      valorPorParcela <- valor / 3
-   caso (4)
-      valorPorParcela <- valor / 4
-   caso (5)
-      valorPorParcela <- valor / 5
-   caso (6)
-      valorPorParcela <- valor / 6
-   outrocaso
-      escreval("O limite de parcelas é em até 6 vezes, débitado á vista")
-   fimescolha
-
-   //Escolha-Caso para mensagem final
-   
-      escolha formaDePagamento
-      caso "V"
-         escreval("Valor do Produto:",valor :2:2)
-         escreval("Forma de Pagamento: Á VISTA")
-         escreval("Valor do Desconto:",desconto)
-         escreval("Total a Pagar:",valorFinal :2:2)
-      caso "P"
-         escreval("Valor do Produto:",valor :2:2)
-         escreval("Forma de Pagamento: PARCELADO")
-         escreval("Quantidade de parcelas:",parcelas)
-         escreval("Valor das parcelas:",valorPorParcela :2:2)
-         escreval("Total a Pagar:",valorFinal :2:2)
-      outrocaso
-         escreval("forma de  pagamento não reconhecida")
-      fimescolha
-
-
-
 
 Fimalgoritmo
