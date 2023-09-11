@@ -64,15 +64,8 @@ Inicio
          escreval("Valor das parcelas:",valorPorParcela :2:2)
          escreval("Total a Pagar:",valorFinal :2:2)
       outrocaso
-         escreval("forma de pagamento não reconhecida")
+         escreval("forma de  pagamento não reconhecida")
       fimescolha
-
-
-
-
-Fimalgoritmo
-
-
 
 
 
