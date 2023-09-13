@@ -1,0 +1,20 @@
+Algoritmo "semnome"
+//
+//
+//
+//
+//
+Var
+
+   numero: inteiro
+   tabuada: inteiro
+
+Inicio
+
+   para tabuada de 1 ate 20 passo 1 faca
+      se (tabuada % 2 = 0) entao //mod = resto da divisão
+         escreval("Números pares: ",tabuada)
+      fimse
+   fimpara
+
+Fimalgoritmo
