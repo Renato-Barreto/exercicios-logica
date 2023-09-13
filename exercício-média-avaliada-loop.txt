@@ -1,0 +1,34 @@
+Algoritmo "semnome"
+// Disciplina  :  [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 13/09/2023
+Var
+   media: real
+
+Inicio
+
+   media <- -1
+
+   enquanto (media > 10) ou (media < 0) faca
+      escreva("digite sua média: ")
+      leia(media)
+   fimenquanto
+
+   se media >= 7 entao
+      escreval ("Aprovado com média: ", media)
+   fimse
+
+   se (media >= 5) e (media < 7) entao
+      escreval ("Recuperação com média: ", media)
+   fimse
+
+   se media < 5 entao
+      escreval ("Reprovado com média: ", media)
+   fimse
+
+
+
+
+Fimalgoritmo
