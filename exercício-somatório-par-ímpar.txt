@@ -1,0 +1,52 @@
+Algoritmo "semnome"
+//
+//
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 18/09/2023
+Var
+
+   i: real
+   soma: real
+   valor: real
+   mediaPar: real
+   mediaGeral: real
+   quantidadeImpar: inteiro
+   quantidadePar: inteiro
+   valorPar: real
+   quantidade: inteiro
+
+Inicio
+
+   valor <- 1
+
+   enquanto (valor <> 0) faca
+      escreval("digite o", i + 1,"° valor desejado: ")
+      leia (valor)
+
+      se (valor <> 0) entao
+
+         se (valor % 2 = 0) entao
+            quantidadePar <- quantidadePar + 1
+            valorPar <- valorPar + valor
+         senao
+            quantidadeImpar <- quantidadeImpar + 1
+         fimse
+
+         soma <- soma + valor
+         i <- i + 1
+      fimse
+   fimenquanto
+
+   quantidade <- quantidadePar + quantidadeImpar
+   mediaPar <- valorPar / quantidadePar
+   mediaGeral <- soma / i
+
+   escreval ("Quantidade de numeros pares: ", quantidadePar)
+   escreval ("Quantidade de números impares:", quantidadeImpar)
+   escreval ("Média de números pares:", mediaPar :2:1)
+   escreval ("Média geral:", mediaGeral :2:1)
+
+
+
+Fimalgoritmo
